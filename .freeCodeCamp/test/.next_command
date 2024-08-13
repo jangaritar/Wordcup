@@ -202,3 +202,6 @@ SELECT t.name FROM teams t JOIN games g ON t.team_id = g.winner_id GROUP BY t.na
 ./queries.sh
 __vsc_prompt_cmd_original
 ./queries.sh
+pg_dump -U Jodar -d worldcup -F p -f worldcup.sql
+echo $USER
+pg_dump -U freecodecamp -d worldcup -F p -f worldcup.sql
